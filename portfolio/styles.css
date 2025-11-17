@@ -1,0 +1,261 @@
+.botaomenu {
+    background: #2B1B12;
+}
+
+.botaomenu:hover {
+    background: red;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botaomenudisabled {
+    background: #170E0A;
+    color: gray;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000;
+    color: #C29500;
+}
+
+header {
+    background: #2B1B12;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 12px #5A00A0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    color: #C29500;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background: #5A00A0;
+    color: #fff;
+}
+
+.hero {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: linear-gradient(#2B1B12, #000);
+}
+
+.hero2 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    background: linear-gradient(#000, #2B1B12);
+}
+
+.hero h2 {
+    font-size: 2em;
+    text-shadow: 0 0 10px #000;
+}
+
+.btn {
+    display: inline-block;
+    background: #8B0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: red;
+}
+
+.sobre, .midia, .tabela-sec {
+    max-width: 850px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.portfolio {
+    margin: auto;
+    text-align: center;
+    max-width: 850px;
+    width: 90%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #121212;
+    background: #080808;
+    margin-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-sec {
+    margin: auto;
+    text-align: center;
+    max-width: 850px;
+    width: 80%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #121212;
+    background: #080808;
+    margin-top: 150px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.img-resp, .vid-resp {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    border-radius: 4px;
+    box-shadow: 0 0 15px #5A00A0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #000;
+    margin-top: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+th, td {
+    border: 1px solid #5A00A0;
+    padding: 10px;
+}
+
+th {
+    background: #2B1B12;
+    color: #C29500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 450px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    background: #000;
+    border: 1px solid #333;
+    color: #5A00A0;
+}
+
+button {
+    padding: 10px;
+    background: #8B0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.devs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.github-btn {
+    display: inline-block;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.github-btn:hover {
+    background: #292929;
+    transform: scale(1.05);
+}
+.discord-btn {
+    display: inline-block;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.discord-btn:hover {
+    background: #4752C4;
+    transform: scale(1.05);
+}
+
+@media (max-width: 769px) {
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .portfolio {
+        margin-top: 20px;
+    }
+
+    .form-sec {
+        margin-top: 20px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    header {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+        text-shadow: none;
+    }
+
+    .hero2 {
+        display: none;
+    }
+
+    .img-resp, .vid-resp {
+        width: 350px;
+        box-shadow: none;
+    }
+
+    .btn {
+        display: none;
+    }
+}

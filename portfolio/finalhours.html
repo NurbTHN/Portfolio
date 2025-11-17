@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/Icon.ico">
+    <title>FNaF Final Hours 2D</title>
+</head>
+<body>
+
+    <header id="menufnaffh">
+        <h1>FNaF Final Hours 2D</h1>
+        <nav>
+            <ul class="menu">
+                <li><button class="botaomenu" onclick="window.open('index.html','_self')">Portfólio</button></li>
+                <li><button class="botaomenudisabled">Final Hours</button></li>
+                <li><button class="botaomenu" onclick="window.open('#sobre','_self')">Sobre o Jogo</button></li>
+                <li><button class="botaomenu" onclick="tocarsom()">Tocar Música</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Bem-vindo ao nosso jogo</h2>
+        <p>Um fan game inspirado em FNAF, criado por Isaias e Bruno.</p>
+        <br>
+        <a class="btn" href="https://drive.google.com/file/d/1VYG3cdmyk6HY13Sx62XSeQSNuYRC1wlk/view?usp=sharing">Baixar Demo</a>
+    </div>
+
+    <div id="sobre" class="sobre">
+        <h2>Sobre o jogo</h2>
+        <p>O jogo apresenta mecânicas clássicas de sobrevivência noturna.</p>
+        <ul class="lista">
+            <li>Animatronics</li>
+            <li>Animações</li>
+            <li>Sons</li>
+            <li>Terror (nem tanto)</li>
+        </ul>
+    </div>
+
+    <div class="midia">
+        <h2>Imagens do jogo</h2>
+        <img src="img/img1.png" class="img-resp" alt="Imagem1">
+        <video class="vid-resp" autoplay muted loop>
+            <source src="videos/play1.mp4" type="video/mp4">
+        </video>
+        <video class="vid-resp" autoplay muted loop>
+            <source src="videos/play2.mp4" type="video/mp4">
+        </video>
+        <video class="vid-resp" autoplay muted loop>
+            <source src="videos/play3.mp4" type="video/mp4">
+        </video>
+        <audio id="musica" loop volume="0.5" src="audios/background.mp3"></audio>
+    </div>
+
+    <div class="tabela-sec">
+        <h2>Requisitos</h2>
+        <table>
+            <tr>
+                <th>Componente</th>
+                <th>Mínimo</th>
+                <th>Recomendado</th>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>2GB</td>
+                <td>4GB</td>
+            </tr>
+            <tr>
+                <td>GPU</td>
+                <td>Integrada</td>
+                <td>GTX 1050 Ti+</td>
+            </tr>
+            <tr>
+                <td>Sistema</td>
+                <td>Windows 7+</td>
+                <td>Windows 10+</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="hero2">
+        <p><b>Parece que você chegou ao fim da página</b></p>
+        <br>
+        <a class="btn" href="#menufnaffh">Voltar</a>
+    </div>
+
+    <script type="text/javascript">
+        let musica = document.getElementById("musica");
+
+        function tocarsom(e) {
+            musica.play();
+            musica.volume = "0.5";
+        };
+    </script>
+
+</body>
+</html>
